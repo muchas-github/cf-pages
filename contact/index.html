@@ -1,0 +1,128 @@
+---
+layout: default
+title: Contact Us for More Information
+description: Here at Pierce Landscapers, we’re prepared to treat every location with precision and professionalism. Call or contact us today to see how we can help you.
+pagestyle: contact.css
+--- 
+
+<!-- Main section -->
+<main>
+  <!-- Breadcrumb and heading sections-->
+  <section class="contact-header">
+    <div class="container">
+      <div class="contact-header__content">
+        <ul class="contact-header__breadcrumb">
+          <li><a href="../">Home</a></li>
+          <li>Contact Us</li>
+        </ul>
+        <h1>Contact us</h1>
+      </div>
+    </div>
+  </section>
+  <!-- Form grid -->
+  <section class="contact-form">
+    <div class="container">
+      <div class="contact-form__grid">
+        <div class="contact-form__content">
+          <h2>Get In Touch</h2>
+          <p>
+            Pierce Landscapers is here for all landscaping needs, from basic brush and grass work to paving services and retaining wall construction. We have the experience necessary to complete any job on both residential and commercial properties, so don’t hesitate to contact our team with the form below.
+          </p>
+         {% include contact-form.html %}
+        </div>
+        <iframe
+          title="map location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.1240089301564!2d-122.44437398438374!3d47.194585279159455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x341d65f34f3ca825!2sPierce%20Landscapers%20%26%20Lawn%20Care!5e0!3m2!1sen!2sin!4v1642000864573!5m2!1sen!2sin"
+          loading="lazy"
+          width="570"
+          height="822"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- Paragrpah about Pierce Landcaping section -->
+  <section class="pierce-paragraph">
+    <div class="container">
+      <p>
+        We’re confident here at Pierce Landscapers that we can professionally and effectively address the landscaping and gardening needs of both residential and commercial properties. No job is too hard for us and no property is too complex. We'd jump at the chance to show what we can do for you. Please fill out the form above or give us a call for more info - we can’t wait to hear from you!
+      </p>
+    </div>
+  </section>
+</main>
+<!-- Footer section -->
+{% include footer.html %}
+<!-- Delay Javascript execution -->
+<script>
+var domain = window.location.origin + "/";
+
+if (window.location.origin.includes("localhost")) {
+  domain += "pierce-landscaping/";
+}
+
+var scriptsToLoad = [
+  "{{'assets/dist/js/vendor/jquery.min.js' | relative_url}}",
+  "{{'assets/dist/js/vendor/lazyload.min.js' | relative_url}}",
+  "{{'assets/dist/js/global.js' | relative_url}}",
+  "{{'assets/dist/js/vendor/jquery.validate.min.js' | relative_url}}",
+  "{{'assets/dist/js/custom/contact.js' | relative_url}}",
+];
+
+for (var i = 0; i < scriptsToLoad.length; i++) {
+  if (scriptsToLoad[i].includes("./")) {
+    scriptsToLoad[i] = scriptsToLoad[i].replace("./", domain);
+  }
+}
+
+function loadExt(e, t) {
+  var n = this;
+  (n.files = e),
+    (n.js = []),
+    (n.head = document.getElementsByTagName("head")[0]),
+    (n.after = t || function () {}),
+    (n.loadStyle = function (e) {
+      var t = document.createElement("link");
+      (t.rel = "stylesheet"),
+        (t.type = "text/css"),
+        (t.href = e),
+        n.head.appendChild(t);
+    }),
+    (n.loadScript = function (e) {
+      var t = document.createElement("script");
+      (t.type = "text/javascript"),
+        (t.src = n.js[e]),
+        (t.onload = function () {
+          ++e < n.js.length ? n.loadScript(e) : n.after();
+        }),
+        n.head.appendChild(t);
+    });
+  for (var o = 0; o < n.files.length; o++)
+    /\.js$|\.js\?/.test(n.files[o]) && n.js.push(n.files[o]),
+      /\.css$|\.css\?/.test(n.files[o]) && n.loadStyle(n.files[o]);
+  n.js.length > 0 ? n.loadScript(0) : n.after();
+}
+var executed = !1,
+  events = [
+    "mousedown",
+    "mousemove",
+    "keydown",
+    "touchmove",
+    "touchstart",
+    "mousewheel",
+    "DOMMouseScroll",
+    "resize",
+    "scroll",
+  ];
+function delayJSExecution() {
+  if (!executed) {
+    executed = !0;
+    for (var e = events.length - 1; e >= 0; e--)
+      window.removeEventListener(events[e], delayJSExecution);
+    new loadExt(scriptsToLoad, function (e) {});
+  }
+}
+for (var i = events.length - 1; i >= 0; i--)
+  window.addEventListener(events[i], delayJSExecution);
+document.addEventListener("DOMContentLoaded", (e) => {
+  window.scrollY > 1 && !executed && delayJSExecution();
+});
+</script>

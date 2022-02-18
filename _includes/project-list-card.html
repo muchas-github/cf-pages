@@ -1,0 +1,17 @@
+<div class="projects-list__grid">
+    <a href="{{project__item.project__link | relative_url}}"
+      ><img
+        src="{{project__item.project__image | relative_url}}"
+        width="{{project__item.project__image__width}}"
+        height="{{project__item.project__image__height}}"
+        alt="{{project__item.project__image__alt}}"
+        loading="lazy"
+    /></a>
+    <div class="projects-list__grid__text">
+      <a href="{{project__item.project__link | relative_url}}"><h3>{{project__item.project__title}}</h3></a> <br>
+      <h4>{{project__item.project__location}}</h4>
+      <p>
+        {{project__item.project__description}}
+      </p>
+    </div>
+  </div>

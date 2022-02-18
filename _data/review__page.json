@@ -1,0 +1,50 @@
+{
+    "reviews": [
+        {
+            "author": "Harley Ludwig",
+			"review__text": "Can do anything you need! No job too big or too small!
+			Excellent customer service and very friendly! Will be a lifelong
+			customer!",
+			"rating": "5",
+            "services": ["Lawn mowing & maintenance", "Brush hogging & field mowing", "Land clearing, tree & stump removal", "Gardening, weeding, bed work"],
+            "type__of__review": "other"
+        },
+        {
+            "author": "Nabil",
+			"review__text": "They always help me with my yard on my property in Tacoma. Affordable rates and excellent job 👏",
+			"rating": "5",
+            "services": ["Lawn mowing & maintenance", "Brush hogging & field mowing", "Land clearing, tree & stump removal", "Gardening, weeding, bed work"],
+            "type__of__review": "other"
+        },
+        {
+            "author": "Savannah Robinson",
+			"review__text": "Just got into a new house with a large yard that needed a lot of help. Jonathan came and helped us create and envision the yard we wanted. Him and his guys were respectful and took their time to really make our yard look amazing. This will defiantly be the company who I will go back to for any yard care needs.",
+			"rating": "5",
+            "services": ["Lawn mowing & maintenance", "Brush hogging & field mowing", "Land clearing, tree & stump removal", "Gardening, weeding, bed work"],
+            "type__of__review": "google"
+        },
+        {
+            "author": "Teya Thomas",
+			"review__text": "Very professional, got the job done with no hassles and the price was very reasonable. I would definitely recommend Pierce
+			Landscapers and will call on them again.",
+			"rating": "5",
+            "services": ["Lawn mowing & maintenance", "Brush hogging & field mowing", "Land clearing, tree & stump removal", "Gardening, weeding, bed work"],
+            "type__of__review": "yelp"
+        },
+        {
+            "author": "Jaime Camacho",
+			"review__text": "Work is always done with care and the price is very reasonable given the size of the yard. He takes his time and does a fantastic job. I would HIGHLY recommend his services. Great guy who does great work with care.",
+			"rating": "5",
+            "services": ["Lawn mowing & maintenance", "Brush hogging & field mowing", "Land clearing, tree & stump removal", "Gardening, weeding, bed work"],
+            "type__of__review": "video"
+        },
+        {
+            "author": "Scott Wade",
+			"review__text": "I have been using Jonathon and his landscaping business for 3 years. He is extremely professional always on time and takes
+			great pride in his work. I have used his company for Lawn maintenance, pruning, and yard clean up as well as other services. I would highly recommend his services to anyone looking for a man that is trust worthy on time and takes great pride in his work.",
+			"rating": "5",
+            "services": ["Lawn mowing & maintenance", "Brush hogging & field mowing", "Land clearing, tree & stump removal", "Gardening, weeding, bed work"],
+            "type__of__review": "linkedin"
+        }
+    ]
+}

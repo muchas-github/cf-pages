@@ -1,0 +1,143 @@
+---
+layout: default
+pagestyle: home.css
+title: Tacoma Landscaping Professionals
+description: For a wide assortment of Tacoma landscaping tasks, or work needed in the greater Pierce County area, trust the efficiency of Pierce Landscapers. Call us today.
+--- 
+
+<!-- main content  -->
+<main class="site-main" id="site_main">
+  <section class="home-banner">
+    <img
+      class="home-banner__heroimg"
+      srcset="
+        {{'assets/images/home/banner400w.jpg' | relative_url}} 420w,
+        {{'assets/images/home/banner767w.jpg' | relative_url}} 767w,
+        {{'assets/images/home/banner900w.jpg' | relative_url}} 1024w,
+        {{'assets/images/home/banner.jpg' | relative_url}} 2000w
+      "
+      src="{{'assets/images/home/banner400w.jpg' | relative_url}}"
+      alt="Home Hero Image"
+    />
+    <div class="container home-banner__container">
+      <h1 class="home-banner__caption">CONTACT US FOR A FREE ESTIMATE</h1>
+      <form
+        action="#"
+        class="home-banner__form"
+        method="POST"
+        id="lead_form"
+      >
+        <h2 class="home-banner__form-heading">Contact Us Today</h2>
+        <p class="home-banner__form-detail">
+          One of our customer service representatives will reach out to
+          see how we can help you!
+        </p>
+        <fieldset>
+          <input type="text" name="name" placeholder="Name*" />
+        </fieldset>
+        <fieldset>
+          <input type="email" name="email" placeholder="Email*" />
+        </fieldset>
+        <fieldset>
+          <input type="tel" name="phone" placeholder="Phone*" />
+        </fieldset>
+        <button type="submit" class="blue-btn">Submit</button>
+        <div id="feedback"></div>
+      </form>
+    </div>
+  </section>
+  {% include why-call-pierce.html %}
+  {% include what-we-do.html %}
+  {% include areas-of-service.html %}
+  {% include verified-testimonials.html %}
+  <section class="home-cta section-bottom-padding section-top-padding">
+    <div class="container">
+      <h3 class="home-cta__text">
+        Here at Pierce Landscapers, we’re confident that we can satisfy
+        the landscaping and gardening needs of both residential and
+        commercial clients. No job is too tricky for us and no property
+        too complex. We’re eager to show you what we can do just as we’ve
+        shown so many of our customers in the past. Please give us a call
+        for more info - we’d love to hear from you!
+      </h3>
+    </div>
+  </section>
+</main>
+<!-- footer  -->
+{% include footer.html %}
+<!-- Delay Javascript execution -->
+<script>
+  var domain = window.location.origin + "/";
+  
+  if (window.location.origin.includes("localhost")) {
+  domain += "pierce-landscaping/";
+  }
+  
+  var scriptsToLoad = [
+  "./assets/dist/js/vendor/jquery.min.js",
+  "./assets/dist/js/vendor/lazyload.min.js",
+  "./assets/dist/js/global.js",
+  //'./assets/dist/js/vendor/jquery.validate.min.js',
+  "./assets/dist/js/vendor/slick.min.js",
+  "./assets/dist/js/custom/home.js",
+  ];
+  
+  for (var i = 0; i < scriptsToLoad.length; i++) {
+  if (scriptsToLoad[i].includes("./")) {
+      scriptsToLoad[i].replace("./", window.location.origin + "/");
+  }
+  }
+  
+  function loadExt(e, t) {
+  var n = this;
+  (n.files = e),
+      (n.js = []),
+      (n.head = document.getElementsByTagName("head")[0]),
+      (n.after = t || function () {}),
+      (n.loadStyle = function (e) {
+      var t = document.createElement("link");
+      (t.rel = "stylesheet"),
+          (t.type = "text/css"),
+          (t.href = e),
+          n.head.appendChild(t);
+      }),
+      (n.loadScript = function (e) {
+      var t = document.createElement("script");
+      (t.type = "text/javascript"),
+          (t.src = n.js[e]),
+          (t.onload = function () {
+          ++e < n.js.length ? n.loadScript(e) : n.after();
+          }),
+          n.head.appendChild(t);
+      });
+  for (var o = 0; o < n.files.length; o++)
+      /\.js$|\.js\?/.test(n.files[o]) && n.js.push(n.files[o]),
+      /\.css$|\.css\?/.test(n.files[o]) && n.loadStyle(n.files[o]);
+  n.js.length > 0 ? n.loadScript(0) : n.after();
+  }
+  var executed = !1,
+  events = [
+      "mousedown",
+      "mousemove",
+      "keydown",
+      "touchmove",
+      "touchstart",
+      "mousewheel",
+      "DOMMouseScroll",
+      "resize",
+      "scroll",
+  ];
+  function delayJSExecution() {
+  if (!executed) {
+      executed = !0;
+      for (var e = events.length - 1; e >= 0; e--)
+      window.removeEventListener(events[e], delayJSExecution);
+      new loadExt(scriptsToLoad, function (e) {});
+  }
+  }
+  for (var i = events.length - 1; i >= 0; i--)
+  window.addEventListener(events[i], delayJSExecution);
+  document.addEventListener("DOMContentLoaded", (e) => {
+  window.scrollY > 1 && !executed && delayJSExecution();
+  });
+</script>

@@ -1,0 +1,140 @@
+---
+title: Parkland, WA 98444 - Landscaping & Brush Clearing & Gravel install
+layout: single-project
+project_title: "Parkland, WA 98444 - Landscaping & Brush Clearing & Gravel install"
+image__slide: ["assets/images/single-project/after.webp", "assets/images/single-project/hero2.webp", "assets/images/single-project/after.webp", "assets/images/single-project/hero2.webp", "assets/images/single-project/after.webp"]
+---
+
+<main>
+    <!-- Breadcrumb and heading sections-->
+    <section class="projects-header">
+      <div class="container">
+        <div class="projects-header__content">
+          <ul class="projects-header__breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects/">Our Projects</a></li>
+            <li>{{page.project_title}}</li>
+          </ul>
+          <div class="projects-header__content__grid">
+            <div class="projects-header__content__grid__button">
+              <!-- <button>PREVIOUS</button> <button>NEXT</button> -->
+            </div>
+            <div class="projects-header__content__grid__heading">
+              <h1>{{page.project_title}}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slider -->
+    <section class="slider">
+      <div class="container">
+        <div class="slider__for slider-for">
+            {% for img in page.image__slide %}
+                <img
+                    src="{{img | relative_url}}"
+                    width="670"
+                    height="400"
+                    alt="gallery"
+                />
+            {% endfor %}
+        </div>
+        <div class="slider__nav slider-nav">
+            {% for img in page.image__slide %}
+                <img
+                src="{{img | relative_url}}"
+                width="130"
+                height="70"
+                alt="gallery"
+                />
+            {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!-- Work summary -->
+    <section class="work-summary">
+      <div class="container">
+        <div class="work-summary__grid">
+          <div class="work-summary__grid__image">
+            <div id="slider" class="beer-slider" data-beer-label="After">
+              <img
+                src="{{'assets/images/single-project/after.webp' | relative_url }}"
+                alt="after image"
+                width="670"
+                height="400"
+                loading="lazy"
+              />
+              <div class="beer-reveal" data-beer-label="Before">
+                <img
+                  src="{{'assets/images/single-project/before.webp' | relative_url }}"
+                  alt="before image"
+                  width="670"
+                  height="400"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="work-summary__grid__text">
+            <h3> 
+                Summary
+            </h3>
+            <p>
+                This western Washington state home needed lots of work! We were tasked with achieving general improvement in all aspects of the yard rather than being assigned just one specific task. The yard hadn’t been worked on much in recent years and needed a new level of landscaping care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Overview section grid -->
+    <section class="overview">
+      <div class="container">
+        <div class="overview__grid">
+          <div class="overview__grid__1">
+            <h3>
+                The Challenges
+            </h3>
+            <p>
+                This property is in a nice location and had a strong foundation, but it wasn’t cared for enough to fulfill its potential. There were lots of weeds throughout most of the yard and the grass was unkempt. There was a large amount of unwanted wild bushes that made parts of the yard unsightly and difficult to navigate. And very little had been done to enhance the aesthetic of the yard as a whole. We had our hands full.
+
+            </p>
+          </div>
+          <div class="overview__grid__2">
+            <h3>What We Made</h3>
+            <p>
+                To improve the quality of the yard, weeds were removed and the grass was cut to a healthy height. Troublesome bushes and trees were trimmed or removed altogether, improving the visuals of the yard and making it easier to navigate. Fresh gravel was added to key areas around the home and all unwanted foliage was taken away. 
+            </p>    
+            <p>Equipment used:</p>
+            <ul>
+                <li><p>Pickaxe</p></li>
+                <li><p>Rakes and buckets</p></li>
+                <li><p>Weedeater</p></li>
+                <li><p>Hedgebar</p></li>
+                <li><p>Ford Diesel 350</p></li>
+                <li><p>Two-ton dump trailer</p></li>
+                <li><p>Kubota tractor</p></li>
+            </ul>
+          </div>
+          <div class="overview__grid__3">
+            <h3>Services</h3>
+            <ul>
+                <li><p>Weeded entire yard (front and back)</p></li>
+                <li><p>Cut down blackberry bushes</p></li>
+                <li><p>Mowed and weed eated small patches of grass in front</p></li>
+                <li><p>Installed 162 sq. ft. of gravel</p></li>
+                <li><p>Removed and dump all clippings/foliage</p></li>
+                <li><p>Remove two bushes - a climbing pine and a maple spout</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Paragrpah section -->
+    <section class="projects-paragraph">
+      <div class="container">
+        <p>
+            At Pierce Landscapers, we know how to satisfy the landscaping and gardening needs of residential and commercial clients alike. No job is too difficult and no property too complicated. We've shown so many customers what we can do and we're excited to show you, too! Give us a call for more information - we'd love to hear from you!
+        </p>
+      </div>
+    </section>
+  </main>

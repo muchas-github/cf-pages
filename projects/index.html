@@ -1,0 +1,268 @@
+---
+layout: default
+pagetype: projects
+pagestyle: projects.css
+title: Pierce Landscapers
+description: For a wide assortment of Tacoma landscaping tasks, or work needed in the greater Pierce County area, trust the efficiency of Pierce Landscapers. Call us today.
+---
+
+<!-- Main section -->
+<main>
+  <!-- Breadcrumb and heading sections-->
+  <section class="portfolio-header">
+    <div class="container">
+      <div class="portfolio-header__content">
+        <ul class="portfolio-header__breadcrumb">
+          <li><a href="../">Home</a></li>
+          <li>Our Projects</li>
+        </ul>
+        <h1>our <span>projects</span></h1>
+      </div>
+    </div>
+  </section>
+  <section class="project-slider">
+    <div class="container">
+      <div class="project-slider__data">
+        <!-- featured projects on true/false -->
+        {% for project__slider in site.data.project__page.our__project__list %}
+          {% if  project__slider.is__featured__project %}
+              <div class="project-slider__data__project">
+                <div class="project-slider__data__project__image">
+                  <img
+                    src="{{project__slider.project__image | relative_url}}"
+                    alt="{{project__slider.project__image__alt}}"
+                    width="970"
+                    height="485"
+                  />
+                </div>
+                <div class="project-slider__data__project__content">
+                  <div class="project-slider__data__project__content__text">
+                    <h2>{{project__slider.project__title}}</h2>
+                    <p>{{project__slider.project__description}}</p>
+                  </div>
+                  <div class="project-slider__data__project__content__details">
+                    <h3>Residential Landscaping</h3>
+                    <a href="{{project__slider.project__link | relative_url }}">See Project Details</a>
+                  </div>
+                </div>
+              </div>
+          {% endif %}
+        {% endfor %}
+        <!-- Slider 1 -->
+        <!-- <div class="project-slider__data__project">
+          <div class="project-slider__data__project__image">
+            <img
+              src="../assets/images/projects/row-of-traditional-suburban-homes-with-lush-green--BQ2DHJ4.webp"
+              alt="traditional subarban homes with lush green"
+              width="970"
+              height="485"
+            />
+          </div>
+          <div class="project-slider__data__project__content">
+            <div class="project-slider__data__project__content__text">
+              <h2>Project Name</h2>
+              <p>
+                Project summary goes here duis dolor nisi, mollis quis
+                tempus sed, mattis vitae diam. Etiam auctor luctus
+                volutpat. Ut egestas tortor eget purus malesuada, a semper
+                orci sollicitudin. Aenean posuere nunc quis tempus mattis.
+                Quisque feugiat accumsan laoreet. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Proin risus sem, vestibulum nec pretium in,
+                varius non eros. Maecenas sit amet erat semper orci
+                dignissim faucibus. Nam vel enim mauris. Sed eget
+                vestibulum justo.
+              </p>
+            </div>
+            <div class="project-slider__data__project__content__details">
+              <h3>Residential Landscaping</h3>
+              <a href="#">See Project Details</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- Slider 2 -->
+        <!-- <div class="project-slider__data__project">
+          <div class="project-slider__data__project__image">
+            <img
+              src="../assets/images/projects/row-of-traditional-suburban-homes-with-lush-green--BQ2DHJ4.webp"
+              alt="traditional subarban homes with lush green"
+              width="970"
+              height="485"
+            />
+          </div>
+          <div class="project-slider__data__project__content">
+            <div class="project-slider__data__project__content__text">
+              <h2>Project Name</h2>
+              <p>
+                Project summary goes here duis dolor nisi, mollis quis
+                tempus sed, mattis vitae diam. Etiam auctor luctus
+                volutpat. Ut egestas tortor eget purus malesuada, a semper
+                orci sollicitudin. Aenean posuere nunc quis tempus mattis.
+                Quisque feugiat accumsan laoreet. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Proin risus sem, vestibulum nec pretium in,
+                varius non eros. Maecenas sit amet erat semper orci
+                dignissim faucibus. Nam vel enim mauris. Sed eget
+                vestibulum justo.
+              </p>
+            </div>
+            <div class="project-slider__data__project__content__details">
+              <h3>Residential Landscaping</h3>
+              <a href="#">See Project Details</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- Slider 3 -->
+        <!-- <div class="project-slider__data__project">
+          <div class="project-slider__data__project__image">
+            <img
+              src="../assets/images/projects/row-of-traditional-suburban-homes-with-lush-green--BQ2DHJ4.webp"
+              alt="traditional subarban homes with lush green"
+              width="970"
+              height="485"
+            />
+          </div>
+          <div class="project-slider__data__project__content">
+            <div class="project-slider__data__project__content__text">
+              <h2>Project Name</h2>
+              <p>
+                Project summary goes here duis dolor nisi, mollis quis
+                tempus sed, mattis vitae diam. Etiam auctor luctus
+                volutpat. Ut egestas tortor eget purus malesuada, a semper
+                orci sollicitudin. Aenean posuere nunc quis tempus mattis.
+                Quisque feugiat accumsan laoreet. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur
+                ridiculus mus. Proin risus sem, vestibulum nec pretium in,
+                varius non eros. Maecenas sit amet erat semper orci
+                dignissim faucibus. Nam vel enim mauris. Sed eget
+                vestibulum justo.
+              </p>
+            </div>
+            <div class="project-slider__data__project__content__details">
+              <h3>Residential Landscaping</h3>
+              <a href="#">See Project Details</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- Filter projects -->
+  {% comment %}
+    {% include filter-projects.html %}
+  {% endcomment %}
+  <!-- Projects list -->
+  <section class="projects-list">
+    <div class="container">
+      <!-- Project 1 grid -->
+      <div class="showLoadedGrid">
+        {% for project__item in site.data.project__page.our__project__list limit:12 %}
+          {% include project-list-card.html %}
+        {% endfor %}
+      </div>
+      <!-- Hidden list grid -->
+      {% if site.data.project__page.our__project__list > 1 %}
+      <div class="showLoadedGrid">
+        
+        {% for project__item in site.data.project__page.our__project__list offset:12 %}
+           {% include project-list-card.html %}
+        {% endfor %}
+        
+      </div>
+      <button id="loadMore">LOAD MORE</button>
+      {% endif %}
+    </div>
+   
+  </section>
+  <!-- Paragrpah section -->
+  <section class="portfolio-paragraph">
+    <div class="container">
+      <p>
+        Here at Pierce Landscapers, we're confident that we can satisfy
+        the landscaping and gardening need of both residential and
+        commercial clients. No job is too tricky for us and no property
+        too complex. We're eager to show you what we can do just as we've
+        shown so many of our customers in the past. Please give us a call
+        for more info - we'd love to hear from you!
+      </p>
+    </div>
+  </section>
+</main>
+<!-- Footer section -->
+{% include footer.html %}
+<!-- Delay Javascript execution -->
+<script>
+  var domain = window.location.origin + "/";
+
+  if (window.location.origin.includes("localhost")) {
+    domain += "pierce-landscaping/";
+  }
+
+  var scriptsToLoad = [
+    "{{'assets/dist/js/vendor/jquery.min.js' | relative_url}}",
+    "{{'assets/dist/js/vendor/lazyload.min.js' | relative_url}}",
+    "{{'assets/dist/js/global.js' | relative_url}}",
+    //'./assets/dist/js/vendor/jquery.validate.min.js',
+    "{{'assets/dist/js/vendor/slick.min.js' | relative_url}}",
+    "{{'assets/dist/js/custom/projects.js' | relative_url}}",
+  ];
+
+  for (var i = 0; i < scriptsToLoad.length; i++) {
+    if (scriptsToLoad[i].includes("./")) {
+      scriptsToLoad[i] = scriptsToLoad[i].replace("./", domain);
+    }
+  }
+
+  function loadExt(e, t) {
+    var n = this;
+    (n.files = e),
+      (n.js = []),
+      (n.head = document.getElementsByTagName("head")[0]),
+      (n.after = t || function () {}),
+      (n.loadStyle = function (e) {
+        var t = document.createElement("link");
+        (t.rel = "stylesheet"),
+          (t.type = "text/css"),
+          (t.href = e),
+          n.head.appendChild(t);
+      }),
+      (n.loadScript = function (e) {
+        var t = document.createElement("script");
+        (t.type = "text/javascript"),
+          (t.src = n.js[e]),
+          (t.onload = function () {
+            ++e < n.js.length ? n.loadScript(e) : n.after();
+          }),
+          n.head.appendChild(t);
+      });
+    for (var o = 0; o < n.files.length; o++)
+      /\.js$|\.js\?/.test(n.files[o]) && n.js.push(n.files[o]),
+        /\.css$|\.css\?/.test(n.files[o]) && n.loadStyle(n.files[o]);
+    n.js.length > 0 ? n.loadScript(0) : n.after();
+  }
+  var executed = !1,
+    events = [
+      "mousedown",
+      "mousemove",
+      "keydown",
+      "touchmove",
+      "touchstart",
+      "mousewheel",
+      "DOMMouseScroll",
+      "resize",
+      "scroll",
+    ];
+  function delayJSExecution() {
+    if (!executed) {
+      executed = !0;
+      for (var e = events.length - 1; e >= 0; e--)
+        window.removeEventListener(events[e], delayJSExecution);
+      new loadExt(scriptsToLoad, function (e) {});
+    }
+  }
+  for (var i = events.length - 1; i >= 0; i--)
+    window.addEventListener(events[i], delayJSExecution);
+  document.addEventListener("DOMContentLoaded", (e) => {
+    window.scrollY > 1 && !executed && delayJSExecution();
+  });
+</script>

@@ -1,0 +1,266 @@
+{
+	"why__call": [
+		{
+			"title": "Insured and Bonded",
+			"description": "All Pierce County landscaping jobs are fully insured and bonded, guaranteeing that our clients are free from liability.",
+			"image__url": "assets/images/home/insured.svg",
+			"image_alt": "alt image",
+			"width": "76",
+			"height": "80"
+		},
+		{
+			"title": "Licensed",
+			"description": "We are fully licensed landscapers, ensuring legitimacy and peace of mind for our clients.",
+			"image__url": "assets/images/home/licensed.svg",
+			"image_alt": "alt image",
+			"width": "84",
+			"height": "80"
+		},
+		{
+			"title": "Reasonable price",
+			"description": "We want our landscaping services to be accessible to everyone. That’s why we always try to keep our prices low and transparent.",
+			"image__url": "assets/images/home/price.svg",
+			"image_alt": "alt image",
+			"width": "122",
+			"height": "65"
+		},
+		{
+			"title": "Year-round service",
+			"description": "Landscaping in Tacoma and around the whole county is important no matter the time of year - and we always get it done right",
+			"image__url": "assets/images/home/year-round.svg",
+			"image_alt": "alt image",
+			"width": "98",
+			"height": "80"
+		}
+	],
+	"what__we_do__list": [
+		{
+			"title": "Lawn mowing and maintenance",
+			"description": "Tacoma landscaping wouldn't be complete without lawn care.
+			We're experts at all the basics your grass requires.",
+			"regular__img__url": "assets/images/home/mowing-grass.jpg",
+			"sm__img__url": "assets/images/home/mowing-grass300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Lawn mowing and maintenance",
+			"external__link": "/services/lawn-mowing-maintenance"
+		},
+		{
+			"title": "Brush hogging and field mowing",
+			"description": "We have the tools necessary to mow in bulk and quickly and
+            safely clear brush on the edges of your property.",
+			"regular__img__url": "assets/images/home/brush-hogging.jpg",
+			"sm__img__url": "assets/images/home/brush-hogging300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Brush hogging and field mowing",
+			"external__link": "/services/brush-hogging-field-mowing"
+		},
+		{
+			"title": "Land clearing, tree and stump removal",
+			"description": "Pierce County landscaping often includes maintenance on
+            the beautiful trees that cover our state. We’ve got you
+            covered on all of that stuff, too.",
+			"regular__img__url": "assets/images/home/tree-removal.jpg",
+			"sm__img__url": "assets/images/home/tree-removal300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Land clearing, tree and stump removal",
+			"external__link": "/services/land-clearing-tree-stump-removal"
+		},
+		{
+			"title": "Gardening, weeding, bed work",
+			"description": "Need micro gardening tasks done? You got it. Our thumbs
+            are greener than grass and we always pay attention to
+            detail.",
+			"regular__img__url": "assets/images/home/gardening.jpg",
+			"sm__img__url": "assets/images/home/gardening300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Gardening, weeding, bed work",
+			"external__link": "/services/gardening-weeding-bed"
+		},
+		{
+			"title": "Hedge trimming",
+			"description": "Proper hedges are a Tacoma landscaping staple. We have the
+            precision and expertise to keep yours looking top-notch
+            year-round.",
+			"regular__img__url": "assets/images/home/hedge-trimming.jpg",
+			"sm__img__url": "assets/images/home/hedge-trimming300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Hedge trimming",
+			"external__link": "/services/hedge-trimming"
+		},
+		{
+			"title": "Beauty bark installation",
+			"description": "Class up your property with beauty bark and trust the eye
+            of the style experts at Pierce Landscapers.",
+			"regular__img__url": "assets/images/home/beauty-bark.jpg",
+			"sm__img__url": "assets/images/home/beauty-bark300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Beauty bark installation",
+			"external__link": "/services/beauty-bark-installation"
+		},
+		{
+			"title": "Blackberry bush removal",
+			"description": "Due to our climate, Tacoma landscaping often includes
+            removing those pesky blackberry bushes. And we love the
+            challenge.",
+			"regular__img__url": "assets/images/home/blackberry-bush.jpg",
+			"sm__img__url": "assets/images/home/blackberry-bush300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Blackberry bush removal",
+			"external__link": "/services/blackberry-bush-removal"
+		},
+		{
+			"title": "Tree and hedge pruning",
+			"description": "Pruning is essential in keeping trees and hedges healthy.
+            We’re experts is keeping what you need, and removing
+            what’s holding your vegetation back.",
+			"regular__img__url": "assets/images/home/brush-hogging.jpg",
+			"sm__img__url": "assets/images/home/brush-hogging300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Tree and hedge pruning",
+			"external__link": "/services/tree-hedge-pruning"
+		},
+		{
+			"title": "Paving services",
+			"description": "We install lots of paved patios, outdoor fireplaces,
+            walking paths, and more all around the county and beyond.",
+			"regular__img__url": "assets/images/home/paving.jpg",
+			"sm__img__url": "assets/images/home/paving300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Paving services",
+			"external__link": "/services/paving-services"
+		},
+		{
+			"title": "Forestry mulching",
+			"description": "Landscaping Pierce County’s forests requires strength,
+            speed, and a deft touch - and we have all the tools
+            necessary.",
+			"regular__img__url": "assets/images/home/mulching.jpg",
+			"sm__img__url": "assets/images/home/mulching300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Forestry mulching",
+			"external__link": "/services/forestry-mulching"
+		},
+		{
+			"title": "Gravel work",
+			"description": "Our gravel work is effective and stylish. Add walkways to
+            your yard or complement nice-looking plants with some
+            well-placed stones.",
+			"regular__img__url": "assets/images/home/gravel.jpg",
+			"sm__img__url": "assets/images/home/gravel300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Gravel work",
+			"external__link": "/services/gravel-work"
+		},
+		{
+			"title": "Patio building",
+			"description": "We’d love to build you a patio that makes your yard more
+            “hangout spot” and less “wild west”. And we’ve done it all
+            before.",
+			"regular__img__url": "assets/images/home/patio.jpg",
+			"sm__img__url": "assets/images/home/patio300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Patio building",
+			"external__link": "/services/patio-building"
+		},
+		{
+			"title": "Sprinkler system installation and maintenance",
+			"description": "Tacoma landscaping routines for lush lawns often include a
+            steady water supply. We can get you going with a new
+            sprinkler system, or help maintain the one you’ve got.",
+			"regular__img__url": "assets/images/home/sprinkler.jpg",
+			"sm__img__url": "assets/images/home/sprinkler300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Sprinkler system installation and maintenance",
+			"external__link": "/services/residential-landscaping"
+		},
+		{
+			"title": "Fireplace and firepit installation",
+			"description": "Nothing brings comfort to a backyard like s’mores and an
+            open fire. We install firepits like the best of them, no
+            matter what your yard looks like.",
+			"regular__img__url": "assets/images/home/fire.jpg",
+			"sm__img__url": "assets/images/home/fire300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "Marshmallows roasting over a fire pit",
+			"external__link": "/services/fireplace-firepit-installation"
+		},
+		{
+			"title": "Retaining wall construction",
+			"description": "Retaining walls can be crucial elements of up-kept
+            Washington State yards due to the state’s hilly landscape.
+            Ours are always strong, long-lasting, and easy on the eye.",
+			"regular__img__url": "assets/images/home/wall.jpg",
+			"sm__img__url": "assets/images/home/wall300w.jpg",
+			"width": "270px",
+            "height": "237px",
+			"img__alt": "A stone retaining wall",
+			"external__link": "/services/retaining-wall-construction"
+		}
+	],
+	"verified__testimonials": [
+		{
+			"author": "Harley Ludwig",
+			"testimonial__text": "Can do anything you need! No job too big or too small!
+			Excellent customer service and very friendly! Will be a lifelong
+			customer!",
+			"rating": "3"
+		},
+		{
+			"author": "Savannah Robinson",
+			"testimonial__text": "Just got into a new house with a large yard that needed a lot of help. Jonathan came and helped us create and envision the
+			yard we wanted. Him and his guys were respectful and took their
+			time to really make our yard look amazing. This will defiantly
+			be the company who I will go back to for any yard care needs.",
+			"rating": "3"
+		},
+		{
+			"author": "Jaime Camacho",
+			"testimonial__text": "Work is always done with care and the price is very reasonable given the size of the yard. He takes his time and does a
+			fantastic job. I would HIGHLY recommend his services. Great guy
+			who does great work with care.",
+			"rating": "3"
+		},
+		{
+			"author": "Teya Thomas",
+			"testimonial__text": "Very professional, got the job done with no hassles and the price was very reasonable. I would definitely recommend Pierce
+			Landscapers and will call on them again.",
+			"rating": "3"
+		},
+		{
+			"author": "Shawnta Smith",
+			"testimonial__text": "Thank you so much to the Pierce Landscapers crew. I am so pleased with all of the extra time they put into the services I
+			needed provided. I would highly recommend this company and will
+			absolutely be a returning customer",
+			"rating": "3"
+		},
+		{
+			"author": "Scott Wade",
+			"testimonial__text": "I have been using Jonathon and his landscaping business for 3 years. He is extremely professional always on time and takes
+			great pride in his work. I have used his company for Lawn
+			maintenance, pruning, and yard clean up as well as other
+			services. I would highly recommend his services to anyone
+			looking for a man that is trust worthy on time and takes great
+			pride in his work.",
+			"rating": "3"
+		},
+		{
+			"author": "Nabil",
+			"testimonial__text": "They always help me with my yard on my property in Tacoma. Affordable rates and excellent job 👏",
+			"rating": "3"
+		}
+	]
+}

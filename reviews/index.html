@@ -1,0 +1,171 @@
+---
+layout: default
+pagetype: reviews
+pagestyle: reviews.css
+title: Pierce Landscapers
+description: For a wide assortment of Tacoma landscaping tasks, or work needed in the greater Pierce County area, trust the efficiency of Pierce Landscapers. Call us today.
+---
+
+<!-- Main section -->
+<main>
+  <!-- Breadcrumb and heading sections-->
+  <section class="reviews-header">
+    <div class="container">
+      <div class="reviews-header__content">
+        <ul class="reviews-header__breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li>Reviews</li>
+        </ul>
+        <h1>Reviews</h1>
+      </div>
+    </div>
+  </section>
+  <!-- Reviews section -->
+  <section class="reviews">
+    <div class="reviews__site">
+      <ul>
+        <li id="tab-1" class="review-item">Clutch</li>
+        <li id="tab-2" class="review-item">Google</li>
+        <li id="tab-3" class="review-item">Yelp</li>
+        <li id="tab-4" class="review-item">Linkedin</li>
+        <li id="tab-5" class="review-item">Video</li>
+        <li id="tab-6" class="review-item">Others</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="reviews__site__comments">
+        <!-- Video site comments 1 -->
+        <!-- <div class="reviews__site__individual-comment" id="tab-1-content">
+          {% for review__item in site.data.review__page.reviews %}
+              {% include review-card.html %}
+          {% endfor %}
+        </div> -->
+        <!-- Google site comments 2 -->
+        <div class="reviews__site__individual-comment" id="tab-2-content">
+          {% for review__item in site.data.review__page.reviews %}
+            {% if review__item.type__of__review == "google" %}
+              {% include review-card.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- Yelp site comments 3 -->
+        <div class="reviews__site__individual-comment" id="tab-3-content">
+          {% for review__item in site.data.review__page.reviews %}
+            {% if review__item.type__of__review == "yelp" %}
+              {% include review-card.html %}
+            {% endif %}
+        {% endfor %}
+        </div>
+        <!-- Linkedin site comments 4 -->
+        <div class="reviews__site__individual-comment" id="tab-4-content">
+          {% for review__item in site.data.review__page.reviews %}
+            {% if review__item.type__of__review == "linkedin" %}
+              {% include review-card.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- Video site comments 5 -->
+        <div class="reviews__site__individual-comment" id="tab-5-content">
+          {% for review__item in site.data.review__page.reviews %}
+          {% if review__item.type__of__review == "video" %}
+            {% include review-card.html %}
+          {% endif %}
+        {% endfor %}
+        </div>
+        <!-- Other site comments 6-->
+        <div class="reviews__site__individual-comment" id="tab-6-content">
+          {% for review__item in site.data.review__page.reviews %}
+            {% if review__item.type__of__review == "other" %}
+              {% include review-card.html %}
+            {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Review contact button -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-section__flex">
+        <h3>CONTACT US FOR A FREE ESTIMATE</h3>
+        <a href="/contact/"><button>CONTACT US</button></a>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Footer section -->
+{% include footer.html %}
+<!-- Delay Javascript execution -->
+<script>
+var domain = window.location.origin + "/";
+
+if (window.location.origin.includes("localhost")) {
+  domain += "pierce-landscaping/";
+}
+
+var scriptsToLoad = [
+  "{{'assets/dist/js/vendor/jquery.min.js' | relative_url}}",
+  "{{'assets/dist/js/vendor/lazyload.min.js' | relative_url}}",
+  "{{'assets/dist/js/global.js' | relative_url}}",
+  "{{'assets/dist/js/custom/reviews.js' | relative_url}}",
+];
+
+for (var i = 0; i < scriptsToLoad.length; i++) {
+  if (scriptsToLoad[i].includes("./")) {
+    scriptsToLoad[i] = scriptsToLoad[i].replace("./", domain);
+  }
+}
+
+function loadExt(e, t) {
+  var n = this;
+  (n.files = e),
+    (n.js = []),
+    (n.head = document.getElementsByTagName("head")[0]),
+    (n.after = t || function () {}),
+    (n.loadStyle = function (e) {
+      var t = document.createElement("link");
+      (t.rel = "stylesheet"),
+        (t.type = "text/css"),
+        (t.href = e),
+        n.head.appendChild(t);
+    }),
+    (n.loadScript = function (e) {
+      var t = document.createElement("script");
+      (t.type = "text/javascript"),
+        (t.src = n.js[e]),
+        (t.onload = function () {
+          ++e < n.js.length ? n.loadScript(e) : n.after();
+        }),
+        n.head.appendChild(t);
+    });
+  for (var o = 0; o < n.files.length; o++)
+    /\.js$|\.js\?/.test(n.files[o]) && n.js.push(n.files[o]),
+      /\.css$|\.css\?/.test(n.files[o]) && n.loadStyle(n.files[o]);
+  n.js.length > 0 ? n.loadScript(0) : n.after();
+}
+var executed = !1,
+  events = [
+    "mousedown",
+    "mousemove",
+    "keydown",
+    "touchmove",
+    "touchstart",
+    "mousewheel",
+    "DOMMouseScroll",
+    "resize",
+    "scroll",
+  ];
+function delayJSExecution() {
+  if (!executed) {
+    executed = !0;
+    for (var e = events.length - 1; e >= 0; e--)
+      window.removeEventListener(events[e], delayJSExecution);
+    new loadExt(scriptsToLoad, function (e) {});
+  }
+}
+for (var i = events.length - 1; i >= 0; i--)
+  window.addEventListener(events[i], delayJSExecution);
+document.addEventListener("DOMContentLoaded", (e) => {
+  window.scrollY > 1 && !executed && delayJSExecution();
+});
+</script>

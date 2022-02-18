@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include meta-info.html %}
+  <!--preload-->
+  {% if page.url == "/" %}
+    <link rel="preload" as="image" href="{{'assets/images/home/banner400w.jpg' | relative_url}}"
+      imagesrcset="{{'assets/images/home/banner400w.jpg' | relative_url}} 420w, {{'assets/images/home/banner767w.jpg' | relative_url}} 767w, {{'assets/images/home/banner900w.jpg' | relative_url}} 1024w, {{'assets/images/home/banner.jpg' | relative_url}} 2000w"
+      imagesizes="100vw" />
+  {% endif %}
+  {% include header-preload.html %}
+  {% if page.url == "/" or page.pagetype == "projects"%}
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" href="{{'assets/dist/css/vendor/slick.css' | relative_url}}" />
+  {% endif %}
+  <!-- Page Styles-->
+  <link rel="stylesheet" href="/assets/dist/css/templates/{{page.pagestyle}}" />
+  {% if page.url == "/" %} 
+  <!-- Local Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "PIERCE LANDSCAPERS",
+      "url": "https://piercelandscapers.com/",
+      "telephone": "253-444-3032",
+      "priceRange": "$$$",
+      "hasMap": "https://www.google.com/maps?cid=3755269759977695269",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6826 S Park Ave",
+        "addressLocality": "Tacoma",
+        "addressRegion": "WA",
+        "postalCode": "98408",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 47.1945853,
+            "longitude": -122.4421853
+          },
+          "geoRadius": 15000
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "07:00",
+          "closes": "19:00"
+        }
+      }
+    }
+  </script>
+  {% endif %}
+</head>
+<body>
+    <div id="site-wrapper">
+        <!-- header  -->
+        {% include header.html %}
+        {{ content }}
+    </div>
+</body>
+</html>

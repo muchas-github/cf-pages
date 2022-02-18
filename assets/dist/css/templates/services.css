@@ -1,0 +1,869 @@
+body {
+  background-color: #fff;
+}
+
+.services-header {
+  background: url('../../../images/services/hero-image.webp') no-repeat center center/cover;
+}
+
+.services-header .container {
+  padding-top: 140px;
+  position: relative;
+}
+
+.services-header .services-header__content .services-header__breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  position: absolute;
+}
+
+.services-header .services-header__content .services-header__breadcrumb a {
+  color: #fff;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.services-header .services-header__content .services-header__breadcrumb li {
+  color: #fff;
+}
+
+.services-header .services-header__content .services-header__breadcrumb li + li:before {
+  padding: 0 4px 0 9px;
+  color: #fff;
+  content: "/\00a0";
+}
+
+.services-header .services-header__hero-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__text-content {
+  padding: 0 25px;
+  border-left: 2px solid #329abf;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__text-content h1 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 1.7px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__text-content p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  padding-bottom: 35px;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid {
+  background-color: #f5f6f0;
+  opacity: 0.95;
+  padding: 50px 70px;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid .services-header__hero-grid__form-grid__text h3 {
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid .services-header__hero-grid__form-grid__text p {
+  padding: 20px 0 30px 0;
+  font-size: 14px;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form {
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form .p-grid {
+  gap: 1rem;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div label {
+  display: none;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div input {
+  width: 100%;
+  padding: 0.8rem 0 0.8rem 0.8rem;
+  border: 1px solid #b8acac;
+  font-size: 14px;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div input::-webkit-input-placeholder {
+  color: #444;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div input:-ms-input-placeholder {
+  color: #444;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div input::-ms-input-placeholder {
+  color: #444;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div input::placeholder {
+  color: #444;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div input:focus {
+  -webkit-box-shadow: inset 0px 0px 0px 1px #0fa2e6;
+  box-shadow: inset 0px 0px 0px 1px #0fa2e6;
+  outline: transparent;
+  border: 1px solid #0fa2e6;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div button {
+  border: none;
+  text-transform: uppercase;
+  background-color: #0fa2e6;
+  color: #fff;
+  width: 100%;
+  padding: 15px 94px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.services-header .services-header__hero-grid .services-header__hero-grid__form-grid form div button:hover {
+  background-color: #f48038;
+  letter-spacing: 4px;
+  padding: 15px 82px;
+}
+
+.gardening-services {
+  background-color: #fff;
+  padding: 70px 0;
+}
+
+.gardening-services .gardening-services__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.gardening-services .gardening-services__grid img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.gardening-services .gardening-services__grid .gardening-services__text {
+  padding-left: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.gardening-services .gardening-services__grid .gardening-services__text h2 {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-transform: uppercase;
+
+}
+
+.gardening-services .gardening-services__grid .gardening-services__text h2 span {
+  color: #0fa2e6;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.gardening-services .gardening-services__grid .gardening-services__text .gardening-services__text__p {
+  padding-top: 32px;
+  font-size: 14px;
+}
+
+.gardening-services .gardening-services__grid .gardening-services__text ul {
+  list-style: none;
+}
+
+.gardening-services .gardening-services__grid .gardening-services__text ul span {
+  color: #0fa2e6;
+  font-weight: bold;
+}
+
+.gardening-services .gardening-services__grid .gardening-services__text ul li {
+  padding-left: 30px;
+  list-style: none;
+  background-image: url(../../../images/services/check.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position-y: 4px;
+  background-size: 15px;
+  padding-bottom: 20px;
+}
+
+.weeding-services {
+  background-color: #f9f9f9;
+  padding: 70px 0;
+}
+
+.weeding-services .weeding-services__heading {
+  text-align: center;
+}
+
+.weeding-services .weeding-services__heading h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.weeding-services .weeding-services__heading h2 span {
+  color: #0fa2e6;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.weeding-services .weeding-services__heading p {
+  margin: auto;
+  padding: 32px 0 40px 0;
+  width: 770px;
+  font-size: 14px;
+}
+
+.weeding-services .weeding-services__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.weeding-services .weeding-services__grid .weeding-services__grid__text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.weeding-services .weeding-services__grid .weeding-services__grid__text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: calc(100% + 8px) !important;
+}
+
+.weeding-services .weeding-services__grid .weeding-services__grid__text p {
+  font-size: 14px;
+}
+
+.weeding-services .weeding-services__grid .weeding-services__grid__text ul {
+  list-style: none;
+}
+
+.weeding-services .weeding-services__grid .weeding-services__grid__text ul span {
+  color: #0fa2e6;
+  font-weight: bold;
+}
+
+.weeding-services .weeding-services__grid .weeding-services__grid__text ul li {
+  padding-left: 30px;
+  list-style: none;
+  background-image: url(../../../images/services/check.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position-y: 4px;
+  background-size: 15px;
+  padding-bottom: 20px;
+}
+
+.weeding-services .weeding-services__grid img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.bed-work {
+  background-color: #fff;
+  padding: 70px 0;
+}
+
+.bed-work .bed-work__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.bed-work .bed-work__grid img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.bed-work .bed-work__grid .bed-work__grid__content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__text h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__text h2 span {
+  color: #0fa2e6;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__text p {
+  font-size: 14px;
+}
+
+.bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__list ul {
+  list-style: none;
+}
+
+.bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__list ul span {
+  color: #0fa2e6;
+  font-weight: bold;
+}
+
+.bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__list ul li {
+  padding-left: 30px;
+  list-style: none;
+  background-image: url(../../../images/services/check.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position-y: 4px;
+  background-size: 15px;
+  padding-bottom: 20px;
+}
+
+.experience {
+  padding: 70px 0;
+}
+
+.experience h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 626px;
+  margin: auto;
+  line-height: 45px;
+  text-align: center;
+}
+
+.experience h2 span {
+  color: #0fa2e6;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.experience .experience__grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.experience .experience__grid p {
+  padding: 40px 0;
+  font-size: 14px;
+  width: 770px;
+  margin: auto;
+  text-align: center;
+}
+
+.experience .experience__grid img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.services-contact {
+  padding: 70px 0;
+  background-color: #0fa2e6;
+}
+
+.services-contact .services-contact__grid {
+  text-align: center;
+}
+
+.services-contact .services-contact__grid p {
+  font-size: 21px;
+  width: 770px;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+}
+
+.services-contact .services-contact__grid a {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 40px;
+  padding: 15px 71px;
+  background-color: #fff;
+  color: #0fa2e6;
+  border: none;
+  cursor: pointer;
+}
+
+.services-contact .services-contact__grid a:hover {
+  padding: 15px 51px;
+  background-color: #192f3d;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+
+
+/* New css for aligning the content in service page -- added by @Rushikesh  */
+.service-points{
+  list-style: none;
+}
+
+.service-points span {
+  color: #0fa2e6;
+  font-weight: bold;
+}
+
+.service-points li {
+  padding-left: 30px;
+  list-style: none;
+  background-image: url(../../../images/services/check.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position-y: 4px;
+  background-size: 15px;
+  padding-bottom: 20px;
+}
+
+.bold-text{
+  line-height: calc(100% + 8px) !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.highlighted {
+  padding: 70px 0;
+}
+
+.highlighted h2 {
+  font-size: 32px;
+  line-height: calc(100% + 8px) !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  margin: auto;
+  line-height: 38px;
+  text-align: center;
+}
+
+.highlighted h2 span {
+  color: #0fa2e6;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.highlighted .highlighted__grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.highlighted .highlighted__grid p {
+  padding: 36px 0;
+  font-size: 14px;
+  width: 770px;
+  margin: auto;
+  text-align: center;
+}
+
+.highlighted .highlighted__grid img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.grid__two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.mt-1{margin-top: 1rem;}
+.mt-2{margin-top: 2.1rem;}
+.mt-4{margin-top: 4.5rem;}
+
+.heading-h3 {
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+.section-p {
+  font-size: 14px;
+}
+
+.section-heading-center {
+  padding: 0px 0;
+}
+
+.section-heading-center h2 {
+  font-size: 32px;
+  line-height: calc(100% + 8px) !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  margin: auto;
+  line-height: 38px;
+  text-align: center;
+}
+
+.section-heading-center {
+  display: -ms-grid;
+  display: grid;
+}
+
+.section-heading-center p {
+  padding: 36px 0;
+  font-size: 14px;
+  width: 770px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-heading-center img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.point-mark{
+  color: #0fa2e6;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.uppercase-text{
+  text-transform: uppercase;
+}
+.text-center{
+  text-align: center;
+}
+
+.w-90{
+  width: 80% !important;
+}
+
+.img-fit{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .services-header {
+    height: 800px;
+  }
+  .services-header .container {
+    padding-top: 114px;
+  }
+  .services-header__content .services-header__breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services-header__hero-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .services-header__hero-grid .services-header__hero-grid__text-content {
+    border-left: none !important;
+    text-align: center;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .services-header__hero-grid .services-header__hero-grid__text-content h1 {
+    font-size: 32px !important;
+    padding: 15px 0 20px 0 !important;
+    margin-bottom: 0px !important;
+  }
+  .services-header__hero-grid .services-header__hero-grid__text-content p {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .services-header__hero-grid .services-header__hero-grid__form-grid {
+    padding: 30px 40px !important;
+  }
+  .services-header__hero-grid .services-header__hero-grid__form-grid button {
+    padding: 15px 30px !important;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  .gardening-services .gardening-services__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .gardening-services .gardening-services__grid img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 420px;
+    height: 443px;
+  }
+  .gardening-services .gardening-services__grid .gardening-services__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-left: 0px !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .gardening-services .gardening-services__grid .gardening-services__text h2 {
+    font-size: 32px !important;
+    text-align: center;
+    margin-bottom: 32px !important;
+    line-height: calc(100% + 10px) !important;
+
+  }
+  .gardening-services .gardening-services__grid .gardening-services__text .gardening-services__text__p {
+    padding-top: 0px;
+  }
+  .weeding-services {
+    padding: 50px 0;
+  }
+  .weeding-services .weeding-services__heading h2 {
+    font-size: 32px;
+    line-height: calc(100% + 10px) !important;
+  }
+  .weeding-services .weeding-services__heading p {
+    padding: 32px 0 30px 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  .weeding-services .weeding-services__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .weeding-services .weeding-services__grid .weeding-services__grid__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .weeding-services .weeding-services__grid img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 420px;
+    height: 435px;
+  }
+  .bed-work {
+    padding: 50px 0;
+  }
+  .bed-work .bed-work__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .bed-work .bed-work__grid img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 420px;
+    height: 443px;
+  }
+  .bed-work .bed-work__grid .bed-work__grid__content {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__text h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+  }
+  .bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__text h2 span {
+    color: #0fa2e6;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__text p {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  .bed-work .bed-work__grid .bed-work__grid__content .bed-work__grid__content__list p {
+    padding-bottom: 0px !important;
+  }
+  .experience {
+    padding: 0 0 50px 0;
+  }
+  .experience h2 {
+    font-size: 32px;
+    width: 100%;
+  }
+  .experience .experience__grid p {
+    width: 100%;
+  }
+  .experience .experience__grid img {
+    width: 420px;
+    height: 95px;
+  }
+  .services-contact {
+    padding: 50px 0;
+  }
+  .services-contact .services-contact__grid p {
+    width: 100%;
+  }
+  /* added by @rushikesh */
+  .section-heading-center {
+    padding: 0 0 50px 0;
+    margin-top: 2rem;
+  }
+  
+  .section-heading-center h2 {
+    font-size: 32px;
+    width: 100%;
+  }
+  
+  .section-heading-center p {
+    width: 100%;
+  }
+  
+  .section-heading-center img {
+    width: 100%;
+    height: auto;
+  }
+  .highlighted {
+    padding: 0 0 50px 0;
+    margin-top: 2rem;
+  }
+  .highlighted h2 {
+    font-size: 32px;
+    width: 100%;
+  }
+  .highlighted .highlighted__grid p {
+    width: 100%;
+  }
+  .highlighted .highlighted__grid img {
+    width: 420px;
+    height: 95px;
+  }
+  .grid__two{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .mt-4{margin-top: 2.6rem;}
+  .heading-h3{
+    line-height: calc(100% + 10px) !important;
+  }
+  .heading-h3, .section-p{
+    text-align: center;
+  }
+  .w-90{
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .gardening-services img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .weeding-services img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .bed-work img {
+    width: 350px !important;
+    height: 368.67px !important;
+  }
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 450px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 150px;
+  }
+  .services-header .services-header__content .services-header__breadcrumb{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 230px;
+  }
+  .services-header .services-header__content .services-header__breadcrumb{
+    font-size: 8.4px;
+  }
+}
+
+@media (max-width: 300px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 300px;
+  }
+}
+/*# sourceMappingURL=services.css.map */

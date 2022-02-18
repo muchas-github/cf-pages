@@ -1,0 +1,58 @@
+{% assign phoneNumber = site.data.header.phone.phone__content %} {% assign email = site.data.header.email.email__content %}{% assign social__facebook = site.data.header.facebook.external__link %}{% assign social__instagram = site.data.header.instagram.external__link %}
+<footer class="site-wrapper site-footer">
+    <div class="container site-footer__container">
+      <p class="site-footer__copyright">
+        © 2022 Copyright Pierce Landscapers
+      </p>
+      <div class="site-footer__contact-icons contact-icons">
+        <a
+          class="contact-icons__item contact-icons__item--phone"
+          aria-label="Phone Number"
+          href="tel:{{phoneNumber}}"
+          ><img
+            class="lazy"
+            data-src="{{'assets/images/phone.svg' | relative_url}}"
+            alt="Phone Number"
+            width="18px"
+            height="17px"
+          /> </a
+        ><a
+          class="contact-icons__item contact-icons__item--email"
+          aria-label="Email"
+          href="mailto:{{email}}"
+          ><img
+            class="lazy"
+            data-src="{{'assets/images/envelope.svg' | relative_url}}"
+            alt="Email"
+            width="19px"
+            height="15px"
+          /> </a
+        ><a
+          style="display: none"
+          class="contact-icons__item contact-icons__item--facebook"
+          aria-label="Facebook"
+          href="{{social__facebook}}"
+          target="_blank"
+          ><img
+            class="lazy"
+            data-src="{{'assets/images/facebook.svg' | relative_url}}"
+            alt="Facebook"
+            width="13px"
+            height="22px"
+          /> </a
+        ><a
+          style="display: none"
+          class="contact-icons__item contact-icons__item--instagram"
+          aria-label="Instagram"
+          href="{{social__instagram}}"
+          target="_blank"
+          ><img
+            class="lazy"
+            data-src="{{'assets/images/instagram.svg' | relative_url}}"
+            alt="Instagram"
+            width="18px"
+            height="17px"
+        /></a>
+      </div>
+    </div>
+</footer>

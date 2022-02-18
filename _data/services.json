@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Residential Landscaping",
+        "service__url": "/services/residential-landscaping"
+    },
+    {
+        "title": "Commercial Landscaping",
+        "service__url": "/services/commercial-landscaping"
+    },
+    {
+        "title": "Lawn mowing & maintenance",
+        "service__url": "/services/lawn-mowing-maintenance"
+    },
+    {
+        "title": "Brush hogging & field mowing",
+        "service__url": "/services/brush-hogging-field-mowing"
+    },
+    {
+        "title": "Land clearing, tree & stump removal",
+        "service__url": "/services/land-clearing-tree-stump-removal"
+    },
+    {
+        "title": "Gardening, weeding, bed work",
+        "service__url": "/services/gardening-weeding-bed"
+    },
+    {
+        "title": "Hedge trimming",
+        "service__url": "/services/hedge-trimming"
+    },
+    {
+        "title": "Beauty bark installation",
+        "service__url": "/services/beauty-bark-installation"
+    },
+    {
+        "title": "Blackberry bush removal",
+        "service__url": "/services/blackberry-bush-removal"
+    },
+    {
+        "title": "Tree and hedge pruning",
+        "service__url": "/services/tree-hedge-pruning"
+    },
+
+    {
+        "title": "Paving services",
+        "service__url": "/services/paving-services"
+    },
+    {
+        "title": "Forestry mulching",
+        "service__url": "/services/forestry-mulching"
+    },
+    {
+        "title": "Gravel work",
+        "service__url": "/services/gravel-work"
+    },
+    {
+        "title": "Patio building",
+        "service__url": "/services/patio-building"
+    },
+    {
+        "title": "Fireplace and firepit installation",
+        "service__url": "/services/fireplace-firepit-installation"
+    },
+    {
+        "title": "Retaining wall construction",
+        "service__url": "/services/retaining-wall-construction"
+    }
+]

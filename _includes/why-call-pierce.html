@@ -1,0 +1,28 @@
+<section
+class="home-why-callus section-top-padding section-bottom-padding"
+>
+<div class="container">
+  <h2 class="section-heading">
+    <u>Why call</u> Pierce<span>?</span>
+  </h2>
+  <ul class="icon-info-card">
+    {% for why__item in site.data.home__page.why__call %}
+      <li class="icon-info-card__item">
+        <div class="icon-info-card__item-in">
+          <img
+            class="icon-info-card__icon"
+            src="{{why__item.image__url | relative_url}}"
+            alt="Insured and Bonded"
+            width="{{image__url.width}}px"
+            height="{{image__url.height}}px"
+          />
+          <h3 class="icon-info-card__title">{{why__item.title}}</h3>
+          <p class="icon-info-card__info">
+            {{why__item.description}}
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</section>

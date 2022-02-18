@@ -1,0 +1,612 @@
+// Services header styling starts here
+body {
+  background-color: #fff;
+}
+
+.services-header {
+  background: url(../../../images/services/hero-image.webp) no-repeat center
+    center/cover;
+  .container {
+    padding-top: 140px;
+    position: relative;
+  }
+
+  .services-header__content {
+    // breadcrumbs
+    .services-header__breadcrumb {
+      display: flex;
+      font-size: 13px;
+      position: absolute;
+      a {
+        color: #fff;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+      li {
+        color: #fff;
+      }
+
+      li + li:before {
+        padding: 0 4px 0 9px;
+        color: #fff;
+        content: "/\00a0";
+      }
+    }
+  }
+  .services-header__hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+
+    .services-header__hero-grid__text-content {
+      padding: 0 25px;
+      border-left: 2px solid #329abf;
+      align-self: flex-end;
+      h1 {
+        color: #fff;
+        font-size: 34px;
+        font-weight: bold;
+        letter-spacing: 1.7px;
+        line-height: 40px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 14px;
+        color: #fff;
+        line-height: 20px;
+        padding-bottom: 35px;
+      }
+    }
+    .services-header__hero-grid__form-grid {
+      background-color: #f5f6f0;
+      opacity: 0.95;
+      padding: 50px 70px;
+      .services-header__hero-grid__form-grid__text {
+        h3 {
+          font-size: 28px;
+          font-weight: lighter;
+        }
+        p {
+          padding: 20px 0 30px 0;
+          font-size: 14px;
+        }
+      }
+      form {
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .p-grid {
+          gap: 1rem;
+        }
+
+        // Paragraphs with imput and text area
+        div {
+          display: flex;
+          padding-bottom: 1rem;
+          flex-flow: wrap;
+          // width: 100%;
+          label {
+            display: none;
+          }
+          input {
+            width: 100%;
+            padding: 0.8rem 0 0.8rem 0.8rem;
+            border: 1px solid rgb(184, 172, 172);
+            font-size: 14px;
+          }
+          input::placeholder {
+            color: #444;
+          }
+          input:focus {
+            -webkit-box-shadow: inset 0px 0px 0px 1px #0fa2e6;
+            -moz-box-shadow: inset 0px 0px 0px 1px #0fa2e6;
+            box-shadow: inset 0px 0px 0px 1px #0fa2e6;
+            outline: transparent;
+            border: 1px solid #0fa2e6;
+          }
+          //button
+          button {
+            border: none;
+            text-transform: uppercase;
+            background-color: #0fa2e6;
+            color: #fff;
+            width: 100%;
+            padding: 15px 94px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+
+          button:hover {
+            background-color: #f48038;
+            letter-spacing: 4px;
+            padding: 15px 82px;
+          }
+        }
+      }
+    }
+  }
+}
+// Services header styling ends here
+
+// Gardening Services styling starts here
+.gardening-services {
+  background-color: #fff;
+  padding: 70px 0;
+  .gardening-services__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+      align-self: center;
+      justify-self: center;
+    }
+    .gardening-services__text {
+      padding-left: 50px;
+      align-self: center;
+      h2 {
+        font-size: 35px;
+        font-weight: bold;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-transform: uppercase;
+        span {
+          color: #0fa2e6;
+          font-weight: bold;
+          text-decoration: underline;
+          text-underline-offset: 2px;
+        }
+      }
+      .gardening-services__text__p {
+        padding-top: 32px;
+        font-size: 14px;
+      }
+      //   List with span
+      ul {
+        list-style: none;
+
+        span {
+          color: #0fa2e6;
+          font-weight: bold;
+        }
+        li {
+          padding-left: 30px;
+          list-style: none;
+          background-image: url(../../../images/services/check.png);
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-position-y: 4px;
+          background-size: 15px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+// Gardening Services styling ends here
+
+// Weeding Services styling starts here
+.weeding-services {
+  background-color: #f9f9f9;
+  padding: 70px 0;
+  .weeding-services__heading {
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      text-transform: uppercase;
+      font-weight: bold;
+      span {
+        color: #0fa2e6;
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    }
+    p {
+      margin: auto;
+      padding: 32px 0 40px 0;
+      width: 770px;
+      font-size: 14px;
+    }
+  }
+  .weeding-services__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    .weeding-services__grid__text {
+      align-self: center;
+      h3 {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+      }
+      //   List with span
+      ul {
+        list-style: none;
+
+        span {
+          color: #0fa2e6;
+          font-weight: bold;
+        }
+        li {
+          padding-left: 30px;
+          list-style: none;
+          background-image: url(../../../images/services/check.png);
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-position-y: 4px;
+          background-size: 15px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+    img {
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}
+// Weeding Services styling ends here
+
+// Bed Work styling starts here
+.bed-work {
+  background-color: #fff;
+  padding: 70px 0;
+
+  .bed-work__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    img {
+      align-self: center;
+      justify-self: center;
+    }
+    .bed-work__grid__content {
+      align-self: center;
+      .bed-work__grid__content__text {
+        h2 {
+          font-size: 32px;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 32px;
+          span {
+            color: #0fa2e6;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+          }
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .bed-work__grid__content__list {
+        //   List with span
+        ul {
+          list-style: none;
+
+          span {
+            color: #0fa2e6;
+            font-weight: bold;
+          }
+          li {
+            padding-left: 30px;
+            list-style: none;
+            background-image: url(../../../images/services/check.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-position-y: 4px;
+            background-size: 15px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+// Bed Work styling ends here
+
+// Experience section styling starts here
+
+.experience {
+  padding: 70px 0;
+  h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 626px;
+    margin: auto;
+    line-height: 45px;
+    text-align: center;
+    span {
+      color: #0fa2e6;
+      font-weight: bold;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+  .experience__grid {
+    display: grid;
+    p {
+      padding: 40px 0;
+      font-size: 14px;
+      width: 770px;
+      margin: auto;
+      text-align: center;
+    }
+    img {
+      justify-self: center;
+    }
+  }
+}
+
+// Experience section styling ends here
+
+// Services contact styling starts here
+
+.services-contact {
+  padding: 70px 0;
+  background-color: #0fa2e6;
+
+  .services-contact__grid {
+    text-align: center;
+    p {
+      font-size: 21px;
+      width: 770px;
+      margin: auto;
+      color: #fff;
+      font-weight: bold;
+    }
+    a {
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 40px;
+      padding: 15px 71px;
+      background-color: #fff;
+      color: #0fa2e6;
+      border: none;
+      cursor: pointer;
+    }
+    a:hover {
+      padding: 15px 51px;
+      background-color: #192f3d;
+      color: #fff;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+// Services contact styling ends here
+
+// Media queries begin
+
+// For devices less than 1000
+@media (max-width: 1000px) {
+  // For header
+  .services-header {
+    height: 800px;
+    .container {
+      padding-top: 114px;
+    }
+  }
+  .services-header__content {
+    // breadcrumbs
+    .services-header__breadcrumb {
+      display: flex;
+      position: relative !important;
+      justify-content: center;
+    }
+  }
+  .services-header__hero-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    .services-header__hero-grid__text-content {
+      border-left: none !important;
+      text-align: center;
+      padding: 0px !important;
+      margin: 0px !important;
+      h1 {
+        font-size: 32px !important;
+        padding: 15px 0 20px 0 !important;
+        margin-bottom: 0px !important;
+      }
+      p {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    }
+    .services-header__hero-grid__form-grid {
+      padding: 30px 40px !important;
+      button {
+        padding: 15px 30px !important;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+  }
+
+  // Gardening section section
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 10px;
+    .gardening-services__grid {
+      grid-template-columns: 1fr;
+      img {
+        order: 2;
+        width: 420px;
+        height: 443px;
+      }
+      .gardening-services__text {
+        order: 1;
+        padding-left: 0px !important;
+        align-self: center;
+        h2 {
+          font-size: 32px !important;
+          text-align: center;
+          margin-bottom: 32px !important;
+        }
+        .gardening-services__text__p {
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+
+  // Weeding services
+  .weeding-services {
+    padding: 50px 0;
+    .weeding-services__heading {
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        padding: 32px 0 30px 0;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .weeding-services__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      .weeding-services__grid__text {
+        order: 2;
+      }
+      img {
+        align-self: center;
+        width: 420px;
+        height: 435px;
+      }
+    }
+  }
+
+  // Bed work
+  .bed-work {
+    padding: 50px 0;
+
+    .bed-work__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      img {
+        order: 2;
+        width: 420px;
+        height: 443px;
+      }
+      .bed-work__grid__content {
+        align-self: center;
+        .bed-work__grid__content__text {
+          h2 {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 0 !important;
+            span {
+              color: #0fa2e6;
+              font-weight: bold;
+              text-decoration: underline;
+              text-underline-offset: 2px;
+            }
+          }
+          p {
+            padding: 30px 0;
+            font-size: 14px;
+          }
+        }
+        .bed-work__grid__content__list {
+          p {
+            padding-bottom: 0px !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Experience
+  .experience {
+    padding: 0 0 50px 0;
+    h2 {
+      font-size: 32px;
+      width: 100%;
+    }
+    .experience__grid {
+      p {
+        width: 100%;
+      }
+      img {
+        width: 420px;
+        height: 95px;
+      }
+    }
+  }
+
+  // Contact section
+  .services-contact {
+    padding: 50px 0;
+    .services-contact__grid {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// For devices less than 480px
+
+@media (max-width: 480px) {
+  // Images resizing
+
+  .gardening-services {
+    img {
+      width: 350px !important;
+      height: 368.67px !important;
+    }
+  }
+  .weeding-services {
+    img {
+      width: 350px !important;
+      height: 368.67px !important;
+    }
+  }
+  .bed-work {
+    img {
+      width: 350px !important;
+      height: 368.67px !important;
+    }
+  }
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 450px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 380px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 350px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 230px;
+  }
+}
+
+@media (max-width: 300px) {
+  .gardening-services {
+    background-color: #fff;
+    margin-top: 300px;
+  }
+}

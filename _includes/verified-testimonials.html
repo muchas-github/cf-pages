@@ -1,0 +1,24 @@
+<section
+class="home-reviews section-top-padding section-bottom-padding"
+>
+<div class="container">
+  <h2 class="section-heading">Verified <u>Testimonials</u></h2>
+  <p class="section-teaser">
+    We guarantee our clients’ satisfaction, and throughout our time in
+    business, we’ve left a large, diverse pool of happy customers in
+    our wake. Check out our testimonials for yourself and contact us
+    to see what we can do for you so that you can join them!
+  </p>
+  <div class="testimonials">
+    {% for testimonial in site.data.home__page.verified__testimonials %}
+      <blockquote class="testimonials__quote">
+        <header>
+          <cite class="testimonials__author">{{testimonial.author}}</cite>
+        </header>
+        "{{testimonial.testimonial__text}}"
+      </blockquote>
+    {% endfor %}
+  </div>
+  <a href="/reviews/" class="blue-btn home-reviews__btn">More Reviews</a>
+</div>
+</section>

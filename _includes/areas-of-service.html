@@ -1,0 +1,28 @@
+<section
+class="home-locations section-top-padding section-bottom-padding"
+>
+<div class="container">
+  <div class="locations">
+    <img
+      class="locations__bg lazy"
+      data-srcset="{{'assets/images/home/map400w.jpg' | relative_url}} 767w, {{'assets/images/home/map.jpg' | relative_url}} 2000w"
+      data-src="{{'assets/images/home/map400w.jpg' | relative_url}}"
+      alt="Areas of Services Map"
+    />
+    <h2
+      class="
+        locations__heading
+        section-heading section-heading--white
+      "
+    >
+      <u>Areas</u> of Service
+    </h2>
+    <ul class="locations__list">
+      <!-- loading location  -->
+      {% for area in site.data.locations %}
+      <li class="locations__item">{{area.location}}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+</section>

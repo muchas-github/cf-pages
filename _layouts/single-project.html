@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include meta-info.html %}
+    <!-- preload -->
+    <link rel="preload" as="image" href="{{page.after__image | relative_url }}"/>
+    {% include header-preload.html %}
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" href="{{'assets/dist/css/vendor/slick.css' | relative_url}}" />
+    <link rel="stylesheet" href="{{'assets/dist/css/vendor/beerslider.css' | relative_url}}" />
+    <!-- Page Styles-->
+    <link rel="stylesheet"
+      href="{{'assets/dist/css/templates/single-project.css' | relative_url}}"/>
+  </head>
+  <body>
+    <style>
+      @media (max-width: 407px) {
+        .projects-header .projects-header__content .projects-header__content__grid{
+          margin-top: 9rem;
+        }
+        .projects-header .projects-header__content .projects-header__breadcrumb {
+            font-size: 6px !important;
+        }
+      }
+    </style>
+    <div id="site-wrapper">
+      <!-- Header section -->
+      {% include header.html %}
+      <!-- Main section -->
+      {{ content }}
+      <!-- Footer section -->
+      {% include footer.html %}
+    </div>
+    <!-- Delay Javascript execution -->
+    <script>
+      var domain = window.location.origin + "/";
+
+      if (window.location.origin.includes("localhost")) {
+        domain += "pierce-landscaping/";
+      }
+
+      var scriptsToLoad = [
+        "{{'assets/dist/js/vendor/jquery.min.js' | relative_url}}",
+        //'./assets/dist/js/vendor/jquery.validate.min.js',
+        "{{'assets/dist/js/vendor/lazyload.min.js' | relative_url}}",
+        "{{'assets/dist/js/vendor/slick.min.js' | relative_url}}",
+        "{{'assets/dist/js/vendor/beerslider.js' | relative_url}}",
+        "{{'assets/dist/js/global.js' | relative_url}}",
+        "{{'assets/dist/js/custom/single-project.js' | relative_url}}",
+      ];
+
+      for (var i = 0; i < scriptsToLoad.length; i++) {
+        if (scriptsToLoad[i].includes("./")) {
+          scriptsToLoad[i] = scriptsToLoad[i].replace("./", domain);
+        }
+      }
+
+      function loadExt(e, t) {
+        var n = this;
+        (n.files = e),
+          (n.js = []),
+          (n.head = document.getElementsByTagName("head")[0]),
+          (n.after = t || function () {}),
+          (n.loadStyle = function (e) {
+            var t = document.createElement("link");
+            (t.rel = "stylesheet"),
+              (t.type = "text/css"),
+              (t.href = e),
+              n.head.appendChild(t);
+          }),
+          (n.loadScript = function (e) {
+            var t = document.createElement("script");
+            (t.type = "text/javascript"),
+              (t.src = n.js[e]),
+              (t.onload = function () {
+                ++e < n.js.length ? n.loadScript(e) : n.after();
+              }),
+              n.head.appendChild(t);
+          });
+        for (var o = 0; o < n.files.length; o++)
+          /\.js$|\.js\?/.test(n.files[o]) && n.js.push(n.files[o]),
+            /\.css$|\.css\?/.test(n.files[o]) && n.loadStyle(n.files[o]);
+        n.js.length > 0 ? n.loadScript(0) : n.after();
+      }
+      var executed = !1,
+        events = [
+          "mousedown",
+          "mousemove",
+          "keydown",
+          "touchmove",
+          "touchstart",
+          "mousewheel",
+          "DOMMouseScroll",
+          "resize",
+          "scroll",
+        ];
+      function delayJSExecution() {
+        if (!executed) {
+          executed = !0;
+          for (var e = events.length - 1; e >= 0; e--)
+            window.removeEventListener(events[e], delayJSExecution);
+          new loadExt(scriptsToLoad, function (e) {});
+        }
+      }
+      for (var i = events.length - 1; i >= 0; i--)
+        window.addEventListener(events[i], delayJSExecution);
+      document.addEventListener("DOMContentLoaded", (e) => {
+        window.scrollY > 1 && !executed && delayJSExecution();
+      });
+    </script>
+  </body>
+</html>

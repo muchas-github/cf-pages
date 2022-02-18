@@ -1,0 +1,15 @@
+{
+    "our__project__list": [
+        {
+            "project__title": "Parkland, WA 98444 - Landscaping & Brush Clearing & Gravel install",
+            "project__location": "Parkland, WA 98444",
+            "project__description": "This western Washington state home needed lots of work! We were tasked with achieving general improvement in all aspects of the yard rather than being assigned just one specific task. The yard hadn’t been worked on much in recent years and needed a new level of landscaping care.",
+            "project__link": "projects/single-project/parkland-wa-98444-landscaping-brush-clearing-gravel-install",
+            "project__image": "assets/images/projects/row-of-traditional-suburban-homes-with-lush-green--small.webp",
+            "project__image__width": "470",
+            "project__image__height": "300",
+            "project__image__alt": "traditional subarban homes with lush green",
+            "is__featured__project": true
+        }
+    ]
+}

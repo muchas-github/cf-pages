@@ -1,0 +1,98 @@
+{% assign phoneNumber = site.data.header.phone.phone__content %}
+{% assign email = site.data.header.email.email__content %}
+{% assign social__facebook = site.data.header.facebook.external__link %}
+{% assign social__instagram = site.data.header.instagram.external__link %}
+
+<header class="site-header">
+    <div class="container site-header__container">
+      <div class="site-header__logo">
+        PIERCE LANDSCAPERS <a href="tel:{{phoneNumber}}">{{phoneNumber}}</a>
+      </div>
+      <div class="site-header__menu-area">
+        <nav class="site-header__navigation">
+          <button
+            class="site-header__mobmenu-close-icon"
+            aria-label="Close menu"
+          ></button>
+          <ul class="site-header__menu">
+            <li class="site-header__menu-item hide__on-submenu">
+              <a href="/" class="site-header__menu-link">Home</a>
+            </li>
+            <li class="site-header__menu-item site-header__menu-item--has-submenu">
+              <span class="site-header__menu-link sm-link hide__on-submenu" id="service-menu-btn">Services</span>
+              <a href="/services" class="site-header__menu-link hide__on-sm">Services</a>
+              <div class="site-header__submenu-holder mobile-sub-menu">
+             <div class="sub-menu-infoBar">
+              <svg class="service-menu-hide-btn" xmlns="http://www.w3.org/2000/svg" fill="white" width="36" height="12" viewBox="0 0 43.429 17.062"><path d="M-155.774,230.968h-39.6l6.117-6.117-1.414-1.414-8.531,8.531h0l8.531,8.531,1.414-1.414-6.117-6.117h39.6Z" transform="translate(199.203 -223.437)"></path></svg>
+              <h3 class="sub-menu-title">Services</h3>
+             </div>
+                <ul class="site-header__submenu">
+                  {% for service__item in site.data.services %}
+                    <li class="site-header__menu-item site-header__menu-item--child">
+                    <a href="{{service__item.service__url}}" class="site-header__menu-link">{{service__item.title}}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </li>
+            <li class="site-header__menu-item hide__on-submenu">
+              <a href="/projects" class="site-header__menu-link"
+                >Projects</a
+              >
+            </li>
+            <li class="site-header__menu-item hide__on-submenu">
+              <a href="/reviews" class="site-header__menu-link"
+                >Reviews</a
+              >
+            </li>
+            <li class="site-header__menu-item hide__on-submenu">
+              <a href="/contact" class="site-header__menu-link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="site-header__contact-icons contact-icons">
+          <a
+            class="contact-icons__item contact-icons__item--phone"
+            aria-label="Phone Number"
+            href="tel:{{phoneNumber}}"
+            ><img
+              style="max-width: none"
+              src="{{'assets/images/phone.svg' | relative_url}}"
+              alt="Phone Number"
+              width="18px"
+              height="17px"
+            /> </a
+          ><a
+            class="contact-icons__item contact-icons__item--email"
+            aria-label="Email"
+            href="mailto:{{email}}"
+            ><img
+              style="max-width: none"
+              src="{{'assets/images/envelope.svg' | relative_url}}"
+              alt="Email"
+              width="19px"
+              height="15px"
+            /> </a
+          ><a
+            style="max-width: none"
+            class="contact-icons__item contact-icons__item--facebook"
+            aria-label="Facebook"
+            href="{{social__facebook}}"
+            target="_blank"
+            ><img
+              src="{{'assets/images/facebook.svg' | relative_url}}"
+              alt="Facebook"
+              width="13px"
+              height="22px" /></a
+          >
+        </div>
+        <button
+          style="max-width: none"
+          class="site-header__mobmenu-icon"
+          aria-label="Menu"
+        ></button>
+      </div>
+    </div>
+  </header>

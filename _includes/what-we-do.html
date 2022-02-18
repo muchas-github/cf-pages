@@ -1,0 +1,85 @@
+<section
+class="home-what-we-do section-bottom-padding section-top-padding"
+>
+<div class="container">
+  <h2 class="section-heading">So <u>what do we do</u>?</h2>
+  <ul class="imagelink-block home-what-we-do__imagelink-block">
+    <li class="imagelink-block__item">
+      <a href="/services/residential-landscaping" class="imagelink-block__link"
+        ><img
+          data-srcset="{{'assets/images/home/residential-mobile.jpg' | relative_url}} 1199w, {{'assets/images/home/residential.jpg' | relative_url}} 2000w"
+          data-src="{{'assets/images/home/residential-mobile.jpg' | relative_url}}"
+          alt="Residential Landscaping"
+          class="imagelink-block__image lazy"
+          width="540px"
+          height="540px"
+        />
+        <span class="imagelink-block__caption"
+          >Residential<br />Landscaping</span
+        ></a
+      >
+    </li>
+    <li class="imagelink-block__item">
+      <a href="/services/commercial-landscaping" class="imagelink-block__link"
+        ><img
+          data-srcset="{{'assets/images/home/commercial-mobile.jpg' | relative_url}} 1199w, {{'assets/images/home/commercial.jpg' | relative_url}} 2000w"
+          data-src="{{'assets/images/home/commercial-mobile.jpg' | relative_url}}"
+          alt="Commercial Landscaping"
+          class="imagelink-block__image lazy"
+          width="540px"
+          height="540px"
+        />
+        <span class="imagelink-block__caption"
+          >Commercial<br />Landscaping</span
+        ></a
+      >
+    </li>
+  </ul>
+  <p class="home-what-we-do__teaser-top">
+    For businesses around Pierce County and in and around Tacoma,
+    landscaping projects look similar to residential projects, but
+    different locations always present different challenges. Here at
+    Pierce Landscapers, we’re prepared to treat every type of location
+    with precision and professionalism. There isn’t any type of
+    property that we’re unfamiliar with, nor any set of tasks that we
+    aren’t prepared to tackle.
+  </p>
+  <ul class="image-info-list-layout">
+    {% for service__item in site.data.home__page.what__we_do__list %}
+    <li class="image-info-list-layout__item">
+      <a
+        href="{{service__item.external__link}}"
+        class="image-info-list-layout__link">
+          <img
+            data-srcset="{{service__item.sm__img__url | relative_url}} 768w, {{service__item.regular__img__url | relative_url}} 2000w"
+            data-src="{{service__item.sm__img__url | relative_url}}"
+            alt="{{service__item.img__alt}}"
+            class="image-info-list-layout__image lazy"
+            width="{{service__item.width}}"
+            height="{{service__item.height}}"
+          />
+          <div class="image-info-list-layout__text">
+            <h3 class="image-info-list-layout__title">
+              {{service__item.title}}
+            </h3>
+            <p class="image-info-list-layout__content">
+              {{service__item.description}}
+            </p>
+          </div>
+        </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="home-what-we-do__teaser-bottom">
+    Greater Tacoma landscaping requires an assorted set of skills.
+    Thick forests, large grassy fields, and a highly dynamic climate
+    all contribute to potentially difficult landscapes, depending on
+    the property. We have experience performing a wide variety of
+    Pierce County landscaping tasks specific to the area, so nothing
+    you present us with will surprise us. Need some work done that you
+    don’t see listed above? No problem. Contact us and we’ll do our
+    best to work with you, no matter the job at hand. We’re experts in
+    the fields listed above and more!
+  </p>
+</div>
+</section>

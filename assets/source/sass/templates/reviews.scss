@@ -1,0 +1,240 @@
+// Review header styling begins
+
+.reviews-header {
+  margin-top: 7rem;
+  // Breadcrumb
+  .reviews-header__breadcrumb {
+    display: flex;
+    font-size: 13px;
+
+    li {
+      color: #000;
+    }
+
+    li + li:before {
+      padding: 0 4px 0 9px;
+      color: #000;
+      content: "/\00a0";
+    }
+  }
+  // Contact heading
+  h1 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #0fa2e6;
+    letter-spacing: 2px;
+  }
+}
+
+// Header styling ends here
+
+// Reviews styling starts here
+.reviews {
+  .reviews__site {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        display: block;
+        padding: 14px 28px;
+        font-weight: 300;
+        color: #000;
+        font-size: 16px;
+        border: 1px solid #9aa3a4;
+        text-transform: uppercase;
+        margin: 10px 10px;
+        cursor: pointer;
+      }
+
+      li:hover {
+        border: 1px solid #0fa2e6;
+      }
+    }
+  }
+  // When review site is clicked this class should be added
+  .active {
+    color: #fff !important;
+    background-color: #0fa2e6;
+    border: 1px solid #0fa2e6;
+  }
+  //   Comments section
+  .reviews__site__comments {
+    margin-top: 3rem;
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 1.3rem;
+    }
+    // Comment grid
+    .reviews__site__comments__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      .reviews__site__comments__grid__comment {
+        .stars {
+          margin-bottom: 2rem;
+          svg {
+            color: #f48038;
+          }
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    // Services grid
+    .reviews__site__comments__grid__services {
+      li {
+        display: flex;
+        font-weight: 600;
+        padding-bottom: 1.5rem;
+        font-size: 16px;
+        svg {
+          padding-right: 0.8rem;
+
+          color: #0fa2e6;
+        }
+      }
+      li:last-child {
+        display: flex;
+        font-weight: 600;
+        padding-bottom: 0rem;
+      }
+    }
+  }
+}
+
+// Comment reviews hidden
+#tab-1-content,
+#tab-2-content,
+#tab-3-content,
+#tab-4-content,
+#tab-5-content,
+#tab-6-content {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+// Horizontal comment breaking line
+.horizontal-line {
+  margin: 3rem 0;
+  width: 100%;
+  border-top: 1px solid #fcfcfc;
+}
+
+// Reviews styling ends here
+
+// Contact button styling starts here
+
+.contact-section {
+  background-color: #0fa2e6;
+  padding: 5rem 0;
+  .contact-section__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    h3 {
+      font-size: 34px;
+      font-weight: bold;
+      color: #fff;
+      padding-right: 3rem;
+      text-align: center;
+      margin: 5px;
+      letter-spacing: 1.6px;
+    }
+    button {
+      font-size: 16px;
+      margin: 5px;
+      padding: 15px 71px;
+      background-color: #fff;
+      color: #0fa2e6;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      padding: 15px 51px;
+      background-color: #192f3d;
+      color: #fff;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+// Contact button styling ends here
+
+// Media queries
+
+// For devices less than 1198px
+
+@media (max-width: 1198px) {
+  // Header
+  .reviews-header {
+    margin-top: 5.5rem;
+  }
+}
+
+// For devices less than 990px
+
+@media (max-width: 990px) {
+  // Header
+  .reviews-header {
+    h1 {
+      margin: 1.1rem 0 1.2rem 0;
+    }
+  }
+  .reviews__site__comments__grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .contact-section {
+    h3 {
+      padding-right: 0 !important;
+      line-height: 37px;
+    }
+  }
+}
+
+// For devices less than 786px
+
+@media (max-width: 786px) {
+  // Header
+  .reviews-header {
+    // Breadcrumb
+    h1 {
+      font-size: 32px;
+    }
+    .reviews-header__breadcrumb {
+      padding: 1px 0;
+      justify-content: center;
+    }
+  }
+  // Comment grid
+  .reviews__site__comments__grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    .reviews__site__comments__grid__comment {
+      .stars {
+        margin-bottom: 1rem !important;
+      }
+    }
+  }
+  // Horizontal line
+  .horizontal-line {
+    margin: 2rem 0;
+    border-top: 1px solid #fcfcfc;
+  }
+
+  .contact-section {
+    h3 {
+      font-size: 32px !important;
+      margin-bottom: 1.7rem !important;
+    }
+  }
+}
